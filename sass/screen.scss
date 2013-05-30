@@ -1,7 +1,9 @@
-@import "lib/base"; // mixins, sprites
-@import "common";
+@import "lib/base"; // mixins, sprites, helpers, no real css here
+@import "fonts"; // ptsans
+@import "common"; // resets, base styles
+@import "headerfooter"; // guess what is here
 @import "layouts";
-@import "main";
+@import "index";
 
-// this is just example of  how commenting css should be done in big projects
-@import "styledocco"; 
+// this is just example of  how commenting css might be done in big projects
+//@import "styledocco";

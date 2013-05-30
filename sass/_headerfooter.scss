@@ -1,0 +1,239 @@
+.nav{
+	background: #2E3845;
+	height: 60px;
+	.nav__inner{
+		width: $sitewidth;
+		margin: 0 auto;
+		position: relative;
+	}
+	.nav__ul{
+		list-style: none;
+		margin-left: 84px - 13px;
+		font-size: 0;
+		li{
+			display: inline-block;
+		}
+		a{
+			display: inline-block;
+			color: #a0afc3;
+			text-decoration: none;
+			height: 60px;
+			line-height: 60px;
+			padding: 0 13px;
+			position: relative;
+			font-size: 17px;
+			&:before{
+				content: ' ';
+				position: absolute;
+				right: 0;
+				top: 20px;
+				border-right: 1px solid #354151;
+				height: 22px;
+				width: 1px;
+			}
+			&:hover{
+				color: #fff;
+			}
+		}
+		li:last-child{
+			a{
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	.nav__logo{
+		position: absolute;
+		left: 21px;
+		top: 12px;
+		@include s(orel);
+		@extend %hide-text;
+	}
+	.nav__search{
+		position: absolute;
+		right: 21px;
+		top: 17px;
+		text-align: right;
+	}
+	.nav__searchsubmit{
+		@extend hide-text;
+		font-size: 0;
+		border: none;
+		-webkit-apperance:none;
+		@include s(search);
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	.nav__searchtext{
+		background: transparent;
+		border-style: none;
+		color: #A1B0C2;
+		@include placeholder-color(#A1B0C2);
+		text-align: right;
+		font-size: 17px;
+		padding: 3px;
+		width: 120px;
+		&:focus{
+			outline:none;
+			border-bottom: 1px solid #A1B0C2;
+		}
+	}
+}
+.subnav{
+	display: none;
+}
+// footer stick
+body,html{
+	height:100%;
+}
+.site{
+min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -230px;
+}
+.footer,.site__push{
+	height:230px;
+}
+
+.footer{
+	overflow: hidden;
+	.footer__in{
+		background: #2E3845;
+		width: $sitewidth;
+		margin: 0 auto;
+		padding: 20px 0;
+		height: 230px - 40px;
+	}
+	a{
+		color: #a0afc3;
+		&:hover{
+			color: #fff;
+		}
+	}
+	.footer__other{
+		float: left;
+		width: 322px;
+	}
+	.footer__search{
+		border-bottom: 1px solid #3A4757;
+		padding-bottom: 14px;
+		position: relative;
+		margin-bottom: 19px;
+	}
+	.footer__searchicon{
+		position: absolute;
+		@include s(search);
+		top: 3px;
+		left: 3px;
+	}
+	.footer__searchsubmit{
+		visibility:hidden;
+		position: absolute;
+	}
+	.footer__searchfield{
+		width: 288px;
+		margin-left: 33px;
+		@include placeholder-color(#9FAFC1);
+		font-size: 17px;
+		border-style: none;
+		background: transparent;
+		padding: 0;
+		&:focus{
+			outline:none;
+			color: #fff;
+		}
+	}
+	.footer__nav{
+		float: left;
+		width: 281px;
+		margin-left: 60px;
+		list-style: none;
+		li{
+			font-size: 17px;
+			margin-bottom: 6px;
+		}
+		a{
+			text-decoration: none;
+		}
+	}
+}
+.gossites{
+	float: left;
+	margin-left: 30px;
+	list-style: none;
+	width: 287px;
+	margin-top: 5px;
+	li{
+		padding-left: 40px;
+		padding-right: 43px;
+		position: relative;
+		font-size: 13px;
+		margin-bottom: 30px;
+		a{
+			text-decoration: none;
+			display: inline-block;
+		}
+		i{
+			position: absolute;
+			left: 0;
+			top: -2px;
+			display: inline-block;
+		}
+		&.gossites__kremlin i{
+			@include s(kremlin);
+			left: -2px;
+		}
+		&.gossites__gos i{
+			@include s(gos);
+			left: -7px;
+		}
+		&.gossites__sovet{
+			i{
+				@include s(2013);
+				left: -4px;
+				top: 18px;
+			}
+			a{
+				color: #fc4d22;
+			}
+		}
+	}
+}
+.flinks{
+	list-style: none;
+	font-size: 17px;
+	li{
+		margin-bottom: 13px;
+		&.flinks__accessibility i{
+			@include s(special);
+			top: 5px;
+		}
+		&.flinks__pda i{
+			@include s(pda);
+			left: 2px;
+			top: 1px;
+		}
+		&.flinks__rss i{
+			@include s(rss);
+			left: 2px;
+			top: 2px;
+		}
+	}
+	a{
+		padding-left: 33px;
+		display: block;
+		text-decoration: none;
+		position: relative;
+		&:hover{
+			color: #fff;
+		}
+		i{
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: -1px;
+		}
+	}
+}

@@ -1,4 +1,9 @@
 // default layout
+.page{
+	background: #fff;
+	width: $sitewidth;
+	margin: 0 auto;
+}
 .l{
 	width: 100%;
 	display: inline-block;

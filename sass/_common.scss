@@ -45,12 +45,11 @@
 button::-moz-focus-inner { padding: 0; border: 0 }
 input[type="submit"]::-moz-focus-inner { padding: 0; border: 0 }
 
+
+$sitewidth: 1020px;
 body{
-	font: {
-		family: Arial,sans-serif;
-		weight: normal;
-		size: 12px;
-	}
+	background: #EAEDEF;
+	@include ptsans;
 	line-height:1.4;
 }
 // resets
