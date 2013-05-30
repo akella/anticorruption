@@ -83,6 +83,68 @@
 .subnav{
 	display: none;
 }
+
+
+.header{
+	@extend %clr;
+	margin: 0 30px;
+	.header__title{
+		font-weight: normal;
+		font-size: 30px;
+		color: #2d3746;
+		line-height: 1.1;
+		position: relative;
+		padding-left: 30px;
+		width: 640px;
+		float: left;
+		i{
+			@include s(flag);
+			position: absolute;
+			left: 0;
+			top: 3px;
+		}
+	}
+	.plan{
+		float: right;
+		color: #fa4b2a;
+		text-decoration: none;
+		font-family: Arial,sans-serif;
+		width: 200px;
+		padding-left: 50px;
+		position: relative;
+		font-size: 15px;
+		.plan__meta{
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding-top: 13px;
+			text-align: center;
+		}
+		.plan__format{
+// 			font-weight: bold;
+// 			font-size: 15px;
+// 			text-decoration: underline;
+// 			color: #FD1E1A;
+			display: block;
+			margin-bottom: 6px;
+			@extend %hide-text;
+			@include s(pdf);
+			display: inline-block;
+		}
+		.plan__size{
+			color: #b4b3b3;
+			font-size: 12px;
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+
+
 // footer stick
 body,html{
 	height:100%;

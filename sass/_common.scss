@@ -56,6 +56,13 @@ body{
 a img,fieldset{
 	border:none;
 }
+.page{
+	padding: 55px 0px 60px 0px;
+}
+.content{
+	margin-top: 58px;
+	padding: 0 30px;
+}
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{
 	p{
