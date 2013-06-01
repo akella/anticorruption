@@ -17,9 +17,12 @@
 @mixin ptsans(){
 	font-family: 'PT Sans regular', arial, sans-serif;
 }
-@mixin ptsansb(){
+@mixin ptsansi(){
 	font-family: 'PT Sans italic', arial, sans-serif;
 }
-@mixin ptsansi(){
+@mixin ptsansb(){
 	font-family: 'PT Sans bold', arial, sans-serif;
+}
+@mixin ag(){
+  font-family: 'PT Sans regular', arial, sans-serif;
 }

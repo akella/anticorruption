@@ -20,11 +20,87 @@
 		color: #dee1e5;
 		margin-top: 2px;
 	}
-	.topnews__location{
+	.topnews__meta{
 		color: #dee1e5;
 		font-family: "Georgia", serif;
 		font-size: 16px;
 		font-style: italic;
 		margin-top: 17px;
 	}
+	&.topnews_small{
+		.topnews__title{
+			font-size: 19px;
+			margin-bottom: 5px;
+		}
+	}
 }
+.interview{
+	position: relative;
+	clear: both;
+	.interview__head{
+		position: absolute;
+		left: -30px;
+		color: #fff;
+		width: 160px;
+		padding-left: 30px;
+		height: 80px;
+		line-height: 80px;
+		font-size: 30px;
+		font-size: 24px;
+		@include ag;
+		background: #FF4A30;
+		z-index: 10;
+	}
+}
+.h2{
+	font-size: 30px;
+	font-weight: normal;
+	@include ag;
+	color: #2d3746;
+	margin-bottom: 24px;
+}
+.entrieswrap{
+	border: 1px solid #DDDEE1;
+}
+
+.hentry{
+	margin-bottom: 40px;
+	.hentry__content{
+		font-size: 19px;
+		font-weight: normal;
+		color: #2d3746;
+		line-height: 1.3;
+		a{
+			color: #2d3746;
+			text-decoration: none;
+		}
+	}
+	.hentry__media{
+		display: block;
+		margin-bottom: 26px;
+		img{
+			display: block;
+		}
+	}
+	.hentry__source{
+		@include ag;
+		font-size: 13px;
+		color: #aaafb6;
+		margin-top: 9px;
+		a{
+			text-decoration: none;
+			color: #aaafb6;
+		}
+	}
+	.hentry__meta{
+		@include ag;
+		color: #aaafb6;
+		margin-top: 9px;
+		font-size: 13px;
+		a{
+			color: #2d78e1;
+			text-decoration: none;
+		}
+	}
+}
+

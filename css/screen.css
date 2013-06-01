@@ -94,11 +94,31 @@ body, html { height: 100%; }
 .page { background: #fff; width: 1020px; margin: 0 auto; }
 
 .l { width: 100%; display: inline-block; }
-.l .l-col1 { float: left; width: 20%; }
-.l .l-col2 { float: right; width: 70%; }
+.l .l-colleft { float: left; width: 578px; float: left; margin-left: 30px; display: inline; margin-top: 20px; }
+.l .l-colleft .l-col1 { float: left; width: 260px; }
+.l .l-colleft .l-col2 { float: right; width: 260px; }
+.l .l-colright { float: right; width: 321px; }
 
 .topnews { position: relative; margin-bottom: 30px; }
 .topnews .topnews__content { position: absolute; left: 30px; bottom: 30px; width: 55%; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75); }
 .topnews .topnews__title { font-size: 24px; font-weight: normal; color: #fff; line-height: 1.1; }
 .topnews .topnews__published { font-size: 13px; color: #dee1e5; margin-top: 2px; }
-.topnews .topnews__location { color: #dee1e5; font-family: "Georgia", serif; font-size: 16px; font-style: italic; margin-top: 17px; }
+.topnews .topnews__meta { color: #dee1e5; font-family: "Georgia", serif; font-size: 16px; font-style: italic; margin-top: 17px; }
+.topnews.topnews_small .topnews__title { font-size: 19px; margin-bottom: 5px; }
+
+.interview { position: relative; clear: both; }
+.interview .interview__head { position: absolute; left: -30px; color: #fff; width: 160px; padding-left: 30px; height: 80px; line-height: 80px; font-size: 30px; font-size: 24px; font-family: 'PT Sans regular', arial, sans-serif; background: #FF4A30; z-index: 10; }
+
+.h2 { font-size: 30px; font-weight: normal; font-family: 'PT Sans regular', arial, sans-serif; color: #2d3746; margin-bottom: 24px; }
+
+.entrieswrap { border: 1px solid #DDDEE1; }
+
+.hentry { margin-bottom: 40px; }
+.hentry .hentry__content { font-size: 19px; font-weight: normal; color: #2d3746; line-height: 1.3; }
+.hentry .hentry__content a { color: #2d3746; text-decoration: none; }
+.hentry .hentry__media { display: block; margin-bottom: 26px; }
+.hentry .hentry__media img { display: block; }
+.hentry .hentry__source { font-family: 'PT Sans regular', arial, sans-serif; font-size: 13px; color: #aaafb6; margin-top: 9px; }
+.hentry .hentry__source a { text-decoration: none; color: #aaafb6; }
+.hentry .hentry__meta { font-family: 'PT Sans regular', arial, sans-serif; color: #aaafb6; margin-top: 9px; font-size: 13px; }
+.hentry .hentry__meta a { color: #2d78e1; text-decoration: none; }
