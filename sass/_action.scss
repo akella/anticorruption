@@ -31,7 +31,14 @@
 }
 
 .action{
-	
+	.l{
+		@extend %clr;
+	}
+}
+.action_mod{
+	.h1{
+		margin-bottom: .2em;
+	}
 }
 .action__list{
 	font-family: arial, sans-serif;
@@ -64,4 +71,58 @@
 }
 .action__short{
 	
+}
+
+.action__left{
+	float: left;
+	width: 635px;
+	margin-right: 30px;
+}
+.action__right{
+	overflow: hidden;
+}
+.action__date{
+	color: #2d3746;
+	font-size: 11px;
+	margin-bottom: 1.5em;
+}
+.action__speech{
+	.h1{
+		color: #2d3746;
+		font-family: "Arial", sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 2em;
+	}
+	p{
+		color: #737981;
+		font-family: "Arial", sans-serif;
+		font-size: 12px;
+		margin-bottom: 2em;
+	}
+}
+.action__author{
+	p{
+		color: #2d3746;
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+}
+.action__userpic{
+	margin-bottom: 0.5em;
+	img{
+		@include border-radius(50%);
+	}
+}
+.action__article{
+	font-family: Arial, sans-serif;
+	color: #2d3746;
+	font-size: 15px;
+	p{
+		margin-bottom: 1em;
+	}
+	strong{
+		font-size: 18px;
+		font-weight: bold;
+	}
 }

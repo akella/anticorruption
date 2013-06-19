@@ -36,7 +36,6 @@
 	}
 }
 .monitoring__meta{
-	padding-top: 100px;
 	overflow: hidden;
 	color: #737981;
 	font-size: 12px;
@@ -48,14 +47,14 @@
 			text-decoration: underline;
 		}
 	}
-	.monitoring__title{
+	.h1{
 		color: #2d3746;
 		font-size: 14px;
 		font-weight: bold;
 		margin-bottom: 25px;
 	}
 }
-.monitoring__subtitle{
+.monitoring__strong{
 	font-size: 18px;
 	font-weight: bold;
 }
