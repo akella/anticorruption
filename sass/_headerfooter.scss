@@ -12,6 +12,18 @@
 		font-size: 0;
 		li{
 			display: inline-block;
+			margin-left: -1px;
+			z-index: 1;
+			position: relative;
+			&:hover,&.is-active{
+				background: #f82502;
+				a{
+					color: #fff;
+					&:before{
+						content: none;
+					}
+				}
+			}
 		}
 		a{
 			display: inline-block;
@@ -57,7 +69,7 @@
 		text-align: right;
 	}
 	.nav__searchsubmit{
-		@extend hide-text;
+		@extend %hide-text;
 		font-size: 0;
 		border: none;
 		-webkit-apperance:none;
@@ -81,9 +93,62 @@
 	}
 }
 .subnav{
-	display: none;
+	// display: none;
+	height: 75px;
+	background-color: #f82502;
+	ul{
+		padding-left: 1px;
+		margin-left: 70px;
+		@extend %clr;
+	}
+	li{
+		float: left;
+		margin-left: -1px;
+		list-style-type: none;
+		&:hover,&.is-active{
+			background-color: #fa674e;
+			margin-left: -1px;
+		}
+	}
+	a{
+		@include box-sizing(border-box);
+		display: inline-block;
+		vertical-align: top;
+		color: #fff;
+		width: 100%;
+		padding: 0 25px 0 15px;
+		font-weight: bold;
+		text-decoration: none;
+		height: 75px;
+		line-height: 1.4;
+		position: relative;
+		font-size: 14px;
+		padding-top: 18px;
+		&:before{
+			content: ' ';
+			position: absolute;
+			right: 0;
+			top: 21px;
+			border-right: 1px solid #fa674e;
+			height: 28px;
+			width: 1px;
+		}
+		&:hover{
+			color: #fff;
+		}
+	}
+	li:last-child{
+		a{
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
-
+.subnav__inner{
+	width: $sitewidth;
+	margin: 0 auto;
+}
 
 .header{
 	@extend %clr;
@@ -253,7 +318,7 @@ min-height: 100%;
 		}
 		&.gossites__sovet{
 			i{
-				@include s(2013);
+				@include s(i2013);
 				left: -4px;
 				top: 18px;
 			}

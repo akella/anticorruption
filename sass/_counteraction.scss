@@ -1,0 +1,39 @@
+.counteraction{
+	@extend %clr;
+	color: #2d3746;
+	font-family: "Arial";
+	font-size: 15px;
+	.subtitle{
+		border-bottom: 4px solid #eaebec;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+	}
+	a{
+		color: #fa4b2a;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.counteraction__left{
+	float: left;
+	width: 425px;
+}
+.counteraction__right{
+	float: right;
+	width: 425px;
+}
+.counteraction__list{
+	li{
+		list-style-type: none;
+		margin: 25px 0;
+		padding: 0 80px 25px 0;
+		border-bottom: 1px solid #eaebec;
+		&:last-child{
+			margin: 0;
+			padding: 0 80px 0 0;
+			border-bottom: 0;
+		}
+	}
+}
