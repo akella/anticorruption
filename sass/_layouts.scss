@@ -7,6 +7,7 @@
 .l{
 	width: 100%;
 	display: inline-block;
+	@extend %clr;
 	.l-colleft{
 		float:left;
 		width: 578px;
@@ -23,10 +24,25 @@
 			width: 260px;
 		}
 	}
-
 	.l-colright{
 		float:right;
 		width: 321px;
 		border-left: 1px solid #D6D8DC;
+	}
+	.l-main{
+		float: left;
+		width: 635px;
+		margin-right: 30px;
+	}
+	.l-sidebar{
+		overflow: hidden;
+	}
+	.l-left{
+		float: left;
+		width: 425px;
+	}
+	.l-right{
+		float: right;
+		width: 425px;
 	}
 }

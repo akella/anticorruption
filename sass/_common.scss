@@ -1,9 +1,4 @@
 // # SHORT HOWTO
-// ## Sprites
-//     .whatever{ 
-//         @include sized-sprite($icons, badge_hit); //or
-//         @include s($i, badge_hit);
-//     }
 // ### animation example
 //     @include keyframes(rotate) {
 //        from {
@@ -30,7 +25,7 @@
 // ## use cycles
 //     @for $i from 1 through 3 {
 //       .item-#{$i} { width: 2em * $i; }
-//     }
+//     } 
 //     @each $s in a,b,c{
 // 	    #{$s}
 //     }
@@ -51,6 +46,14 @@ body{
 	background: #EAEDEF;
 	@include ptsans;
 	line-height:1.4;
+	min-width: 1020px;
+}
+a{
+	color: #f82502;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
 }
 // resets
 a img,fieldset{

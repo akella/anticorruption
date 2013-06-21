@@ -1,41 +1,5 @@
-.breadcrumbs{
-	padding-bottom: 25px;
-	margin-bottom: 40px;
-	border-bottom: 1px solid #eaebec;
-	li{
-		display: inline-block;
-		margin-right: 25px;
-		line-height: 1;
-		&:last-child{
-			a{
-				&:before{
-					content: none;
-				}
-			}
-		}
-	}
-	a{
-		position: relative;
-		font-size: 13px;
-		color: #f72501;
-		text-decoration: none;
-		&:hover{
-			text-decoration: underline;
-		}
-		&:before{
-			position: absolute;
-			top: 4px;
-			right: -16px; 
-			content: "";
-			@include s(chevron);
-		}
-	}
-}
 .squadmember{
 	position: relative;
-	@extend %clr;
-	font-size: 15px;
-	color: #2d3746;
 	.h1{
 		margin-bottom: 0;
 		line-height: 1;
@@ -57,43 +21,16 @@
 	margin-left: 145px;
 	margin-right: 30px;
 }
-.squadmember__meta{
-	overflow: hidden;
-	padding-top: 135px;
-	color: #737981;
-	font-size: 12px;
-	font-family: "Arial", sans-serif;
-	a{
-		color: #f82502;
-		text-decoration: none;
-		&:hover{
-			text-decoration: underline;
-		}
-	}
-	.squadmember__title{
-		color: #2d3746;
-		font-size: 14px;
-		font-weight: bold;
-		margin-bottom: 25px;
-	}
-	li{
-		list-style-type: none;
-		margin-bottom: 25px;
-		&:last-child{
-			margin-bottom: 0;
-		}
-	}
-}
 .squadmember__heading{
 	margin-bottom: 30px;
-}
-.squadmember__description{
-	font-size: 14px;
-	font-style: italic;
-	font-family: Georgia, "Century Schoolbook L", Serif;
+	p{
+		font-size: 14px;
+		font-style: italic;
+		font-family: Georgia, "Century Schoolbook L", Serif;
+		margin-bottom: 0;
+	}
 }
 .squadmember__subtitle{
-	color: #2d3746;
 	@include ptsans;
 	font-size: 24px;
 	font-weight: normal;
