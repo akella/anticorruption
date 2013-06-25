@@ -14,7 +14,6 @@
 		float: left;
 		li{
 			display: inline-block;
-			margin-left: -1px;
 			z-index: 1;
 			position: relative;
 			&:hover,&.is-active{
@@ -39,9 +38,9 @@
 			&:before{
 				content: ' ';
 				position: absolute;
-				right: 0;
+				left: 0;
 				top: 20px;
-				border-right: 1px solid #354151;
+				border-left: 1px solid #354151;
 				height: 22px;
 				width: 1px;
 			}
@@ -49,7 +48,7 @@
 				color: #fff;
 			}
 		}
-		li:last-child{
+		li:first-child{
 			a{
 				&:before{
 					display: none;
@@ -209,11 +208,11 @@
 	}
 	li{
 		float: left;
-		margin-left: -1px;
 		list-style-type: none;
 		&:hover,&.is-active{
 			background-color: #fa674e;
-			margin-left: -1px;
+			margin-right: -2px;
+			padding-right: 2px;
 		}
 	}
 	a{
@@ -234,7 +233,7 @@
 		&:before{
 			content: ' ';
 			position: absolute;
-			right: 0;
+			left: 0;
 			top: 21px;
 			border-right: 1px solid #fa674e;
 			height: 28px;
@@ -244,7 +243,7 @@
 			color: #fff;
 		}
 	}
-	li:last-child{
+	li:first-child{
 		a{
 			&:before{
 				display: none;
