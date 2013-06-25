@@ -3,9 +3,6 @@
 	@extend %clr;
 	@include box-sizing(border-box);
 	margin-right: 28px;
-	.l{
-		margin-bottom: 30px;
-	}
 }
 .news__col{
 	float: left;

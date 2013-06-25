@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Состав совета и президиума совета- Совет при Президенте Российской Федерации по противодействию коррупции</title>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.tools.min.js"></script>
@@ -12,6 +15,30 @@
 <body>
 <!-- begin site -->
 <div class="site">
+<!-- BEGIN .search -->
+<div class="search js-search">
+	<div class="search__in">
+		<div class="search__wrap">
+			<div class="search__field">
+				<input type="text" class="search__text" name="" placeholder="Поиск" id="">
+				<input type="submit" value="Найти" class="search__submit">
+				<div class="search__close"></div>
+				<div class="search__erase"></div>
+			</div>
+			<div class="search__filter">
+				<span class="search__filter-title">Искать:</span>
+				<ul>
+					<li class="is-active"><a href="#"><i></i> Во всех разделах</a></li>
+					<li><a href="#"><i></i> В событиях</a></li>
+					<li><a href="#"><i></i> Публикациях</a></li>
+					<li><a href="#"><i></i> Решениях</a></li>
+					<li><a href="#"><i></i> Материалах</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.search -->
 <!-- BEGIN  nav-->
 <div class="nav">
 	<div class="nav__inner">
@@ -24,10 +51,7 @@
 			<li><a href="#">Материалы</a></li>
 		</ul>
 		<!-- BEGIN  search-->
-		<div class="nav__search">
-			<input type="text" class="nav__searchtext" name="" placeholder="Поиск" id="">
-			<input type="submit" value="Искать" class="nav__searchsubmit">
-		</div>
+		<div class="nav__search js-search-btn">Поиск<i></i></div>
 		<!-- END search-->
 	</div>
 </div>

@@ -6,4 +6,15 @@ $(document).ready(function() {
 			$(this).toggleClass('is-open');
 		});
 
+	// ---------- Popup with overlay -------------------- //
+		$('body').click(function(){
+			$('.overlay,.popup').toggleClass('is-open');
+		});
+
+	// ---------- search -------------------- //
+		jQuery('.js-search-btn, .search__close').click(function(event) {
+			$('.js-search-btn').toggleClass('is-open');
+			$('.js-search').slideToggle();
+		});
+
 });
