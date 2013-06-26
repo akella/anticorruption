@@ -119,10 +119,10 @@ body, html { height: 100%; }
 
 .footer, .site__push { height: 230px; }
 
-.footer { overflow: hidden; }
+.footer { position: relative; overflow: hidden; }
 .footer .footer__in { background: #2E3845; width: 1020px; margin: 0 auto; padding: 20px 0; height: 190px; }
-.footer a { color: #a0afc3; }
-.footer a:hover { color: #fff; }
+.footer a { color: #a0afc3; text-decoration: none; }
+.footer a:hover { color: #fff; text-decoration: underline; }
 .footer .footer__other { float: left; width: 322px; }
 .footer .footer__search { border-bottom: 1px solid #3A4757; padding-bottom: 14px; position: relative; margin-bottom: 19px; }
 .footer .footer__searchicon { position: absolute; background: url('../img/icons-s69a073c04a.png') 0 -718px no-repeat; width: 16px; height: 16px; top: 3px; left: 3px; }
@@ -133,7 +133,6 @@ body, html { height: 100%; }
 .footer .footer__searchfield:focus { outline: none; color: #fff; }
 .footer .footer__nav { float: left; width: 281px; margin-left: 60px; list-style: none; }
 .footer .footer__nav li { font-size: 17px; margin-bottom: 6px; }
-.footer .footer__nav a { text-decoration: none; }
 
 .gossites { float: left; margin-left: 30px; list-style: none; width: 287px; margin-top: 5px; }
 .gossites li { padding-left: 40px; padding-right: 43px; position: relative; font-size: 13px; margin-bottom: 30px; }
