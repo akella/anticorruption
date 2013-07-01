@@ -11,6 +11,11 @@ $(document).ready(function() {
 			$('.overlay,.popup').toggleClass('is-open');
 		});
 
+	// ---------- Popup with overlay -------------------- //
+		$('.js-search-erase').click(function(){
+			$('.js-search-text').val('');
+		});
+
 	// ---------- search -------------------- //
 		jQuery('.js-search-btn, .search__close').click(function(event) {
 			$('.js-search-btn').toggleClass('is-open');
