@@ -219,7 +219,7 @@ body, html { height: 100%; }
 
 .hentry__nav { background: #2d3746; color: #fff; font-size: 14px; font-weight: bold; margin-bottom: 30px; }
 .hentry__nav li { list-style-type: none; height: 40px; line-height: 40px; border-top: 1px solid #3b4759; position: relative; }
-.hentry__nav li:first-child { border-top: 0; }
+.hentry__nav li:first-child { border-top: 1px solid transparent; }
 .hentry__nav li:hover, .hentry__nav li.is-active { border-top: 1px solid #fa674e; background-color: #fa674e; }
 .hentry__nav li.is-active:before { position: absolute; top: 11px; left: 15px; content: ""; background: url('../img/icons-s69a073c04a.png') 0 -383px no-repeat; width: 15px; height: 15px; }
 .hentry__nav a { display: block; color: #fff; font-size: 14px; font-weight: bold; text-decoration: none; padding-left: 42px; }
