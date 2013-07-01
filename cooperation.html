@@ -20,19 +20,19 @@
 	<div class="search__in">
 		<div class="search__wrap">
 			<div class="search__field">
-				<input type="text" class="search__text" name="" placeholder="Поиск" id="">
+				<input type="text" class="search__text js-search-text" name="" data-filter="1" placeholder="Поиск" id="">
 				<input type="submit" value="Найти" class="search__submit">
 				<div class="search__close"></div>
-				<div class="search__erase"></div>
+				<div class="search__erase js-search-erase"></div>
 			</div>
 			<div class="search__filter">
 				<span class="search__filter-title">Искать:</span>
-				<ul>
-					<li class="is-active"><a href="#"><i></i> Во всех разделах</a></li>
-					<li><a href="#"><i></i> В событиях</a></li>
-					<li><a href="#"><i></i> Публикациях</a></li>
-					<li><a href="#"><i></i> Решениях</a></li>
-					<li><a href="#"><i></i> Материалах</a></li>
+				<ul class="js-search-filters">
+					<li class="is-active"><span class="js-select-all" data-search="1"><i></i> Во всех разделах</span></li>
+					<li><span data-search="2"><i></i> В событиях</span></li>
+					<li><span data-search="3"><i></i> Публикациях</span></li>
+					<li><span data-search="4"><i></i> Решениях</span></li>
+					<li><span data-search="5"><i></i> Материалах</span></li>
 				</ul>
 			</div>
 		</div>
