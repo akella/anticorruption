@@ -374,6 +374,8 @@ body, html { height: 100%; }
 .lteie8 .overlay { background: url("../img/bg_overlay.png"); }
 .lteie8 .search__submit { height: 43px; line-height: 44px; color: #fff; font-size: 18px; }
 .lteie8 .search__submit:hover { cursor: pointer; }
+.lteie8 .nav__ul li { float: left; }
+.lteie8 .nav__ul a { display: block; }
 
 .squadmember { position: relative; }
 .squadmember .h1 { margin-bottom: 0; line-height: 1; }
