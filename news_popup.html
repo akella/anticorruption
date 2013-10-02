@@ -12,275 +12,319 @@
 	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
-<body>
-<!-- begin site -->
-<div class="site">
-<!-- BEGIN .search -->
-<div class="search js-search">
-	<div class="search__in">
-		<div class="search__wrap">
-			<div class="search__field">
-				<input type="text" class="search__text js-search-text" name="" data-filter="1" placeholder="Поиск" id="">
-				<input type="submit" value="Найти" class="search__submit">
-				<div class="search__close"></div>
-				<div class="search__erase js-search-erase"></div>
+<body class="js-popup-page">
+<!-- BEGIN .whole-page -->
+<div class="whole-page">
+	<!-- begin site -->
+	<div class="site">
+		<!-- BEGIN .search -->
+		<div class="search js-search">
+			<div class="search__in">
+				<div class="search__wrap">
+					<div class="search__field">
+						<input type="text" class="search__text js-search-text" name="" data-filter="1" placeholder="Поиск" id="">
+						<input type="submit" value="Найти" class="search__submit">
+						<div class="search__close"></div>
+						<div class="search__erase js-search-erase"></div>
+					</div>
+					<div class="search__filter">
+						<span class="search__filter-title">Искать:</span>
+						<ul class="js-search-filters">
+							<li class="is-active"><span class="js-select-all" data-search="1"><i></i> Во всех разделах</span></li>
+							<li><span data-search="2"><i></i> В событиях</span></li>
+							<li><span data-search="3"><i></i> Публикациях</span></li>
+							<li><span data-search="4"><i></i> Решениях</span></li>
+							<li><span data-search="5"><i></i> Материалах</span></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="search__filter">
-				<span class="search__filter-title">Искать:</span>
-				<ul class="js-search-filters">
-					<li class="is-active"><span class="js-select-all" data-search="1"><i></i> Во всех разделах</span></li>
-					<li><span data-search="2"><i></i> В событиях</span></li>
-					<li><span data-search="3"><i></i> Публикациях</span></li>
-					<li><span data-search="4"><i></i> Решениях</span></li>
-					<li><span data-search="5"><i></i> Материалах</span></li>
+		</div>
+		<!-- /.search -->
+		<!-- BEGIN  nav-->
+		<div class="nav">
+			<div class="nav__inner">
+			<a href="#" class="nav__logo"></a>
+			<ul class="nav__ul">
+				<li><a href="#">Совет</a></li>
+				<li class="is-active"><a href="#">События</a></li>
+				<li><a href="#">Международное сотрудничество</a></li>
+				<li><a href="#">Противодействие в России</a></li>
+				<li><a href="#">Материалы</a></li>
+			</ul>
+				<!-- BEGIN  search-->
+				<div class="nav__search js-search-btn">Поиск<i></i></div>
+				<!-- END search-->
+			</div>
+		</div>
+		<!-- END nav-->
+		<!-- BEGIN  page-->
+		<div class="page">
+			<!-- BEGIN  header-->
+			<div class="header">
+				<h1 class="header__title"><i></i>Совет при Президенте Российской Федерации<br> по противодействию коррупции</h1>
+				<a href="#" class="plan plan_pdf">
+					<div class="plan__text">Национальный план противодействия коррупции на 2011-2012 годы</div>
+					<div class="plan__meta">
+						<span class="plan__format">PDF</span>
+						<span class="plan__size">350Kb</span>
+					</div>
+				</a>
+			</div>
+			<!-- END header-->
+
+			<!-- BEGIN  content-->
+			<div class="content">
+				<!-- BEGIN  entrieswrap-->
+				<div class="entrieswrap">
+					<div class="anons">
+						<div class="anons__title"><i></i>Анонс</div>
+						<div class="anons__content">
+							8 марта вступит в силу Соглашение об учреждении Международной антикоррупционной академии
+						</div>
+						<a href="#" class="anons__add">Добавить анонс</a>
+					</div>
+						<!-- BEGIN .news -->
+						<div class="news">
+							<h1 class="h1">Все события</h1>
+							<!-- BEGIN  l-->
+							<div class="l">
+								<!-- BEGIN  news__col1-->
+								<div class="news__col news__col1">
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Заседание президиума Совета по противодействию коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__media">
+											<img src="img/img-3.jpg" width="260" height="180" alt="">
+										</div>
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачу взятки и посредничество во взяточничестве</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен законопроект о ратификации ст. 20 Конвенции ООН против коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Заседание президиума Совета по противодействию коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Прокуратура округа выявила грубые нарушения законодательства о противодействии коррупции в службе ветеринарии ЯНАО</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачу взятки и посредничество во взяточничестве</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+										<div class="hentry__source"><a href="#">Lenta.ru</a></div>
+									</div>
+									<!-- END hentry-->
+								</div>
+								<!-- END news__col1-->
+
+								<!-- BEGIN  news__col2-->
+								<div class="news__col news__col2">
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачу взятки и посредничество во взяточничестве</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+										<div class="hentry__source"><a href="#">РИА Новости</a></div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен законопроект о ратификации ст. 20 Конвенции ООН против коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+									</div>
+									<!-- END hentry-->
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Заседание президиума Совета по противодействию коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Прокуратура округа выявила грубые нарушения законодательства в службе ветеринарии ЯНАО</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+										<div class="hentry__source"><a href="#">РБК</a></div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__media">
+											<img src="img/img-4.jpg" width="260" height="180" alt="">
+										</div>
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачувзятки и посредничество во взяточничестве</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+										<div class="hentry__source"><a href="#"><span>Интервью</span></a></div>
+									</div>
+									<!-- END hentry-->
+								</div>
+								<!-- END news__col2-->
+
+								<!-- BEGIN  news__col3-->
+								<div class="news__col news__col3">
+
+									<!-- BEGIN .hentry__nav -->
+									<div class="hentry__nav">
+										<ul>
+											<li class="is-active"><a href="#">Все</a></li>
+											<li><a href="#">События</a></li>
+											<li><a href="#">Публикации</a></li>
+											<li><a href="#">Интервью</a></li>
+										</ul>
+									</div>
+									<!-- /.hentry__nav -->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Заседание президиума Совета по противодействию коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__media">
+											<img src="img/img-5.jpg" width="260" height="180" alt="">
+										</div>
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачувзятки и посредничество во взяточничестве</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен законопроект о ратификации ст. 20 Конвенции ООН против коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">Заседание президиума Совета по противодействию коррупции</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+									</div>
+									<!-- END hentry-->
+
+									<!-- BEGIN  hentry-->
+									<div class="hentry hentry_mod">
+										<div class="hentry__content">
+											<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп</a>
+										</div>
+										<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
+									</div>
+									<!-- END hentry-->
+								</div>
+								<!-- END news__col3-->
+							</div>
+							<!-- /.l -->
+
+							<!-- BEGIN .hentry__pagintaion -->
+							<div class="hentry__pagintaion">
+								<a href="#">Предыдущие события</a>
+							</div>
+							<!-- /.hentry__pagintaion -->
+					</div>
+				</div>
+				<!-- END entrieswrap-->
+			</div>
+			<!-- END content-->
+		</div>
+		<!-- END page-->
+
+
+
+			<div class="site__push"></div>
+	</div>
+	<!-- end site -->
+
+	<!-- BEGIN  footer-->
+	<div class="footer">
+		<div class="footer__in">
+			<ul class="gossites">
+				<li class="gossites__kremlin"><a href="#"><i></i>Администрация Президента Российской Федерации</a></li>
+				<li class="gossites__gos"><a href="#"><i></i>Правительство Российской Федерации</a></li>
+				<li class="gossites__sovet"><a href="#"><i></i>Совет при Президенте Российской Федерации по противодействию коррупции</a></li>
+			</ul>
+			<!-- BEGIN  footer__other-->
+			<div class="footer__other">
+				<div class="footer__search">
+					<div class="footer__searchicon"></div>
+					<input type="text" placeholder="Поиск" id="" class="footer__searchfield">
+					<input type="submit" value="Поиск" class="footer__searchsubmit">
+				</div>
+				<ul class="flinks">
+					<li class="flinks__accessibility"><a href="#"><i ></i>Версия для людей с ограниченными возможностями</a></li>
+					<li class="flinks__pda"><a href="#"><i></i>Мобильная версия</a></li>
+					<li class="flinks__rss"><a href="#"><i></i>RSS</a></li>
 				</ul>
 			</div>
+			<!-- END footer__other-->
+			<ul class="footer__nav">
+				<li><a href="#">Совет</a></li>
+				<li><a href="#">События</a></li>
+				<li><a href="#">Международное сотрудничество</a></li>
+				<li><a href="#">Противодействие в России</a></li>
+				<li><a href="#">Материалы</a></li>
+				<li><a href="#">Карта сайта</a></li>
+			</ul>
 		</div>
 	</div>
+	<!-- END footer-->
 </div>
-<!-- /.search -->
-<!-- BEGIN  nav-->
-<div class="nav">
-	<div class="nav__inner">
-	<a href="#" class="nav__logo"></a>
-	<ul class="nav__ul">
-		<li><a href="#">Совет</a></li>
-		<li class="is-active"><a href="#">События</a></li>
-		<li><a href="#">Международное сотрудничество</a></li>
-		<li><a href="#">Противодействие в России</a></li>
-		<li><a href="#">Материалы</a></li>
-	</ul>
-		<!-- BEGIN  search-->
-		<div class="nav__search js-search-btn">Поиск<i></i></div>
-		<!-- END search-->
-	</div>
-</div>
-<!-- END nav-->
-<!-- BEGIN  page-->
-<div class="page">
-	<!-- BEGIN  header-->
-	<div class="header">
-		<h1 class="header__title"><i></i>Совет при Президенте Российской Федерации<br> по противодействию коррупции</h1>
-		<a href="#" class="plan plan_pdf">
-			<div class="plan__text">Национальный план противодействия коррупции на 2011-2012 годы</div>
-			<div class="plan__meta">
-				<span class="plan__format">PDF</span>
-				<span class="plan__size">350Kb</span>
-			</div>
-		</a>
-	</div>
-	<!-- END header-->
-
-	<!-- BEGIN  content-->
-	<div class="content">
-		<!-- BEGIN  entrieswrap-->
-		<div class="entrieswrap">
-			<div class="anons">
-				<div class="anons__title"><i></i>Анонс</div>
-				<div class="anons__content">
-					8 марта вступит в силу Соглашение об учреждении Международной антикоррупционной академии
-				</div>
-				<a href="#" class="anons__add">Добавить анонс</a>
-			</div>
-				<!-- BEGIN .news -->
-				<div class="news">
-					<h1 class="h1">Все события</h1>
-					<!-- BEGIN  l-->
-					<div class="l">
-						<!-- BEGIN  news__col1-->
-						<div class="news__col news__col1">
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Заседание президиума Совета по противодействию коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__media">
-									<img src="img/img-3.jpg" width="260" height="180" alt="">
-								</div>
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачу взятки и посредничество во взяточничестве</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен законопроект о ратификации ст. 20 Конвенции ООН против коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Заседание президиума Совета по противодействию коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Прокуратура округа выявила грубые нарушения законодательства о противодействии коррупции в службе ветеринарии ЯНАО</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачу взятки и посредничество во взяточничестве</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-								<div class="hentry__source"><a href="#">Lenta.ru</a></div>
-							</div>
-							<!-- END hentry-->
-						</div>
-						<!-- END news__col1-->
-
-						<!-- BEGIN  news__col2-->
-						<div class="news__col news__col2">
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачу взятки и посредничество во взяточничестве</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-								<div class="hentry__source"><a href="#">РИА Новости</a></div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен законопроект о ратификации ст. 20 Конвенции ООН против коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-							</div>
-							<!-- END hentry-->
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Заседание президиума Совета по противодействию коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Прокуратура округа выявила грубые нарушения законодательства в службе ветеринарии ЯНАО</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-								<div class="hentry__source"><a href="#">РБК</a></div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__media">
-									<img src="img/img-4.jpg" width="260" height="180" alt="">
-								</div>
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачувзятки и посредничество во взяточничестве</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-								<div class="hentry__source"><a href="#"><span>Интервью</span></a></div>
-							</div>
-							<!-- END hentry-->
-						</div>
-						<!-- END news__col2-->
-
-						<!-- BEGIN  news__col3-->
-						<div class="news__col news__col3">
-
-							<!-- BEGIN .hentry__nav -->
-							<div class="hentry__nav">
-								<ul>
-									<li class="is-active"><a href="#">Все</a></li>
-									<li><a href="#">События</a></li>
-									<li><a href="#">Публикации</a></li>
-									<li><a href="#">Интервью</a></li>
-								</ul>
-							</div>
-							<!-- /.hentry__nav -->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Заседание президиума Совета по противодействию коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__media">
-									<img src="img/img-5.jpg" width="260" height="180" alt="">
-								</div>
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп, дачувзятки и посредничество во взяточничестве</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен законопроект о ратификации ст. 20 Конвенции ООН против коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>10 января 2013 года</a>, 18:30</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">Заседание президиума Совета по противодействию коррупции</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-							</div>
-							<!-- END hentry-->
-
-							<!-- BEGIN  hentry-->
-							<div class="hentry hentry_mod">
-								<div class="hentry__content">
-									<a href="#">В Госдуму внесен проект федерального закона, ужесточающий наказание закоммерческий подкуп</a>
-								</div>
-								<div class="hentry__meta"><a href='#'>7 января 2013 года</a>, 09:00</div>
-							</div>
-							<!-- END hentry-->
-						</div>
-						<!-- END news__col3-->
-					</div>
-					<!-- /.l -->
-
-					<!-- BEGIN .hentry__pagintaion -->
-					<div class="hentry__pagintaion">
-						<a href="#">Предыдущие события</a>
-					</div>
-					<!-- /.hentry__pagintaion -->
-			</div>
-		</div>
-		<!-- END entrieswrap-->
-	</div>
-	<!-- END content-->
-</div>
-<!-- END page-->
+<!-- END .whole-page -->
 
 <!-- BEGIN .overlay -->
 <div class="overlay is-open"></div>
@@ -317,46 +361,6 @@
 	</div>
 </div>
 <!-- /.popup -->
-
-
-	<div class="site__push"></div>
-</div>
-<!-- end site -->
-
-
-<!-- BEGIN  footer-->
-<div class="footer">
-	<div class="footer__in">
-		<ul class="gossites">
-			<li class="gossites__kremlin"><a href="#"><i></i>Администрация Президента Российской Федерации</a></li>
-			<li class="gossites__gos"><a href="#"><i></i>Правительство Российской Федерации</a></li>
-			<li class="gossites__sovet"><a href="#"><i></i>Совет при Президенте Российской Федерации по противодействию коррупции</a></li>
-		</ul>
-		<!-- BEGIN  footer__other-->
-		<div class="footer__other">
-			<div class="footer__search">
-				<div class="footer__searchicon"></div>
-				<input type="text" placeholder="Поиск" id="" class="footer__searchfield">
-				<input type="submit" value="Поиск" class="footer__searchsubmit">
-			</div>
-			<ul class="flinks">
-				<li class="flinks__accessibility"><a href="#"><i ></i>Версия для людей с ограниченными возможностями</a></li>
-				<li class="flinks__pda"><a href="#"><i></i>Мобильная версия</a></li>
-				<li class="flinks__rss"><a href="#"><i></i>RSS</a></li>
-			</ul>
-		</div>
-		<!-- END footer__other-->
-		<ul class="footer__nav">
-			<li><a href="#">Совет</a></li>
-			<li><a href="#">События</a></li>
-			<li><a href="#">Международное сотрудничество</a></li>
-			<li><a href="#">Противодействие в России</a></li>
-			<li><a href="#">Материалы</a></li>
-			<li><a href="#">Карта сайта</a></li>
-		</ul>
-	</div>
-</div>
-<!-- END footer-->
 
 
 

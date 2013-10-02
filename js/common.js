@@ -9,6 +9,9 @@ $(document).ready(function() {
 	// ---------- Popup with overlay -------------------- //
 		$('body').click(function(){
 			$('.overlay,.popup').toggleClass('is-open');
+			if ($('.popup').hasClass('is-open')){
+				$(this).addClass('js-popup-page');
+			}
 		});
 
 	// ---------- Search erase button -------------------- //
