@@ -12,6 +12,9 @@ $(document).ready(function() {
 			if ($('.popup').hasClass('is-open')){
 				$(this).addClass('js-popup-page');
 			}
+			else {
+				$(this).removeClass('js-popup-page');
+			}
 		});
 
 	// ---------- Search erase button -------------------- //
